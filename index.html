@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="assets/img/favicon.ico">
+    <script src="./index.js"></script>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Source+Code+Pro&display=swap" rel="stylesheet">    
+    <title> cv </title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- <h1 class="font"> Anna Siverikova </h1>
+      <h2 class="font"> Junior Frontend Developer </h2> -->
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
+            <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+            <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+            <li class="nav-item"><a href="#code" class="nav-link">Code example</a></li>
+            <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+            <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container main-container">
+        <section class="section" id="profile">
+          <h1 class="section-title">Anna Siverikova</h1>
+          <img src="https://github.com/AnnaTashSi/rsschool-cv/assets/136920681/c9c2e5e8-f8f2-4eaf-9a1f-b07cb887cb08" alt="AnnaTashSi profile photo">
+          <p>Junior Frontend Developer</p>
+        </section>
+        <section class="section" id="contacts">
+          <h2 class="section-title">Contacts</h2>
+          <p>mob.phone <a target="_blank" href="tel:+7931-382-47-23">+7931-382-47-23</a></p>
+          <p>email <a href="mailto:any_hp@mail.ru">any_hp@mail.ru</a></p>
+          <p>Discord <a target="_blank" href="https://discordapp.com/users/1119678136758587442">@AnnaTashSi</a></p>
+          <p>GitHub <a target="_blank" href="https://github.com/AnnaTashSi">@AnnaTashSi</a></p>
+          <p>Telegram <a target="_blank" href="https://t.me/annaTashSi">@annaTashSi</a></p>
+        </section>
+        <section class="section" id="summary">
+          <h2 class="section-title">Summary</h2>
+          <p>Now I am improving my programming skills to change the direction of my professional activity. I have successfully built a career and had frequent promotions in the field of finance. I think that the skill of effective work and self-study will help me in Front-end.</p>
+        </section>
+        <section class="section" id="skills">
+          <h2 class="section-title">Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Git, GitHub</li>
+            <li>Adobe Photoshop, Illustrator, InDesign, AfterEffects</li>
+          </ul>
+        </section>
+        <section class="section" id="experience">
+          <h2 class="section-title">Experience</h2>
+          <p>@AnnaTashSi (GitHub)</p>
+        </section>
+        <section class="section" id="code">
+          <h2 class="section-title">Code example</h2>
+          <pre class="code-block">
+            <code>
+const addRadioButtonClickHandler = () => {
+    document.querySelector(".radio-button").addEventListener('click', (event) => {
+        if (event.target.classList.contains('favorites-label')) {
+            let clickedButton = event.target;
+            removeActiveButton();
+            selectedButton(clickedButton);
+            showSeasonBooks(clickedButton.innerText.toLowerCase().trim())
+        };
+    })
+}
+            </code>
+          </pre>
+        </section>
+        
+        <section class="section" id="education">
+          <h2 class="section-title">Education</h2>
+          <p>2011 - Higher education with the qualification of Economist</p>
+          <p>2023 - RS School JavaScript Level 0</p>
+        </section>
+        <section class="section" id="languages">
+          <h2>Languages</h2>
+          <p>English - Intermediate (B2) level</p>
+          <p>Russian - Native</p>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p>This CV was created by <a target="_blank" href="https://github.com/AnnaTashSi">@AnnaTashSi</a> in 2025</p>
+        <span> 
+          <a class="link" target="_blank" href="https://rs.school/"> The Rolling Scopes </a>
+        </span>
+    </div>
+    </footer>
+</html>
